@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     generatePassword();
   }, [length, isNumbers, isChar])
-
+ 
   const handleCopy = () => {
     window.navigator.clipboard.writeText(password)
     passRef.current?.select()
